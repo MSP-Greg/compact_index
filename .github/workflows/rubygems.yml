@@ -63,7 +63,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby.value }}
           bundler-cache: true
-          mingw: clang
+          mswin: llvm
         if: matrix.os.name == 'Windows'
       - name: Configure bindgen
         shell: pwsh
